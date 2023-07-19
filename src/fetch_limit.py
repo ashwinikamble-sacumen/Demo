@@ -23,7 +23,7 @@ def fetch_item(limit):
         response = requests.get(url, headers=headers, timeout=2)
         res = response.json()
         print("-----------")
-        # print(res["members"])
+        print(res["members"])
         slack_data.extend(res["members"])
         # print(slack_data[0])
 
