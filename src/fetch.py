@@ -22,7 +22,8 @@ def fetch(url: str) -> Response:
 
     if response.status_code == 200:
         res = response.json()
-        print(res["members"])
+        print(res)
+        # print(res["members"])
     return "worng url passing"
 
 
